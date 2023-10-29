@@ -1,0 +1,14 @@
+body {
+    background: url('../../../public/pedro-lastra-Nyvq2juw4_o-unsplash.jpg'),
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-repeat: none;
+    background-size: cover;
+}
+.card-container {
+    width: 250px;
+    height: 300px;
+    border: 2px solid tomato;
+    border-radius: 20px;
+}

@@ -1,0 +1,63 @@
+[
+    {
+        "Name": "Tony Stark",
+        "Alias": "Iron Man",
+        "Powers": [
+            "Genius-level intellect",
+            "Powered armor suit"
+        ],
+        "Image": "iron_man.jpg",
+        "Height": "6'1\"",
+        "Age": 50,
+        "Nationality": "American"
+    },
+    {
+        "Name": "Steve Rogers",
+        "Alias": "Captain America",
+        "Powers": [
+            "Superhuman strength",
+            "Superhuman agility",
+            "Indomitable will"
+        ],
+        "Image": "captain_america.jpg",
+        "Height": "6'2\"",
+        "Age": 100,
+        "Nationality": "American"
+    },
+    {
+        "Name": "Natasha Romanoff",
+        "Alias": "Black Widow",
+        "Powers": [
+            "Expert martial artist",
+            "Espionage skills"
+        ],
+        "Image": "black_widow.jpg",
+        "Height": "5'7\"",
+        "Age": 35,
+        "Nationality": "Russian"
+    },
+    {
+        "Name": "Bruce Banner",
+        "Alias": "The Hulk",
+        "Powers": [
+            "Superhuman strength",
+            "Regenerative healing"
+        ],
+        "Image": "hulk.jpg",
+        "Height": "7'0\"",
+        "Age": 40,
+        "Nationality": "American"
+    },
+    {
+        "Name": "Thor Odinson",
+        "Alias": "Thor",
+        "Powers": [
+            "God-like strength",
+            "Mjolnir (enchanted hammer)"
+        ],
+        "Image": "thor.jpg",
+        "Height": "6'6\"",
+        "Age": 1500,
+        "Nationality": "Asgardian"
+    }
+]
