@@ -8,7 +8,24 @@ body {
 }
 .card-container {
     width: 250px;
-    height: 300px;
     border: 2px solid tomato;
     border-radius: 20px;
+}
+.card-img {
+    border-radius: 50%;
+}
+.info {
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-btn {
+    background-color: gainsboro;
+    color: black;
+}
+.card-btn:hover {
+    background-color: tomato;
+    color: white;
+}
+.actors-container {
+    display: flex;
 }
