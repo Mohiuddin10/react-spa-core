@@ -17,9 +17,9 @@ const Home = () => {
     console.log(selectedActors);
     return (
         <>
-            <h2>Welcome from Home Actors: {allActors.length}</h2>
-            <div className="actors-container">
-                <div className="card-container">
+            <h2 className='text-white'>Welcome from Home Actors: {allActors.length}</h2>
+            <div className="flex">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {
                         allActors.map(actor => <Actors
                         actor = {actor}

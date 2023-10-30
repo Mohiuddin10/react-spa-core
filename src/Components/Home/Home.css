@@ -6,29 +6,3 @@ body {
     background-repeat: none;
     background-size: cover;
 }
-.card-container {
-    width: 250px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-.card-img {
-    border-radius: 50%;
-}
-.info {
-    display: flex;
-    justify-content: space-evenly;
-}
-.card-btn {
-    background-color: gainsboro;
-    color: black;
-}
-.card-btn:hover {
-    background-color: tomato;
-    color: white;
-}
-.actors-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
