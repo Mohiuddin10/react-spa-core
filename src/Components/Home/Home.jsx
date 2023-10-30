@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import './Home.css'
 import { useState } from 'react';
 import Actors from '../Actors/Actors';
+import SelectedActors from '../SelectedActors/SelectedActors';
+import Cart from '../Cart/Cart';
 const Home = () => {
     const [allActors, setAllActors] = useState([]);
     const [selectedActors, setSelectorActors] = useState([]);
@@ -19,7 +21,7 @@ const Home = () => {
         <>
             <h2 className='text-white'>Welcome from Home Actors: {allActors.length}</h2>
             <div className="flex">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-3/4">
                     {
                         allActors.map(actor => <Actors
                         actor = {actor}
@@ -27,9 +29,7 @@ const Home = () => {
                         key = {actor.id}></Actors>)
                     }
                 </div>
-                <div className="cart-container">
-                    Actor Cart
-                </div>
+                <Cart selectedActors={selectedActors}></Cart>
             </div>
         </>
     );
