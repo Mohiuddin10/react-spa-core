@@ -12,8 +12,8 @@ const Actors = ({ actor, handleAddToCart }) => {
                 <p><small className='text-white'>Country: {country}</small></p>
                 <p><small className='text-white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia eos a eaque animi nobis eveniet sapiente adipisci rem doloribus saepe.</small></p>
                 <div className="flex justify-between text-white">
-                    <p>salary: {salary}</p>
-                    <p>{role}</p>
+                    <p className='text-xm'>salary: {salary}</p>
+                    <p className='text-xm'>{role}</p>
                 </div>
                 <button onClick={() => handleAddToCart(actor)} className='btn btn-primary card-btn'>Select</button>
             </div>
