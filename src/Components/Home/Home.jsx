@@ -6,7 +6,7 @@ import SelectedActors from '../SelectedActors/SelectedActors';
 import Cart from '../Cart/Cart';
 const Home = () => {
     const [allActors, setAllActors] = useState([]);
-    const [totalSpend, setTotalSpand] = useState(0);
+    const [totalSpend, setTotalSpend] = useState(0);
     const [reamining, setRemaining] = useState(0);
     const [selectedActors, setSelectorActors] = useState([]);
     useEffect(() => {
@@ -27,25 +27,31 @@ const Home = () => {
             })
             setSelectorActors([...selectedActors, actor]);
         }
-        console.log(count);
+        setTotalSpend(count);
+        const remainingBudget = 20000 - count;
+        setRemaining(remainingBudget)
     }
 
-        return (
-            <>
-                <h2 className='text-white'>Welcome from Home Actors: {allActors.length}</h2>
-                <div className="flex">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-3/4">
-                        {
-                            allActors.map(actor => <Actors
-                                actor={actor}
-                                handleAddToCart={handleAddToCart}
-                                key={actor.id}></Actors>)
-                        }
-                    </div>
-                    <Cart selectedActors={selectedActors}></Cart>
-                </div>
-            </>
-        );
-    };
 
-    export default Home;
+    return (
+        <>
+            <h2 className='text-white'>Welcome from Home Actors: {allActors.length}</h2>
+            <div className="flex">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-3/4">
+                    {
+                        allActors.map(actor => <Actors
+                            actor={actor}
+                            handleAddToCart={handleAddToCart}
+                            key={actor.id}></Actors>)
+                    }
+                </div>
+                <Cart selectedActors={selectedActors}
+                    key={selectedActors.id}
+                    totalSpend={totalSpend}
+                    remaining={reamining}></Cart>
+            </div>
+        </>
+    );
+};
+
+export default Home;
